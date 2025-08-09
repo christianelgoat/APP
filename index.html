@@ -3,53 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>El Asombroso Mundo de las Abejas</title>
-    <link rel="stylesheet" href="estilos.css">
+    <title>El Universo de las Abejas | Un Mundo por Descubrir</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- Hoja de Estilos -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Script (defer asegura que se carga después del HTML) -->
+    <script src="js/main.js" defer></script>
 </head>
 <body>
 
-    <header>
-        <h1>🐝 El Asombroso Mundo de las Abejas 🐝</h1>
+    <header class="main-header">
+        <div class="header-container">
+            <a href="#" class="header-logo">🐝 Planeta Abeja</a>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="#importancia">Importancia</a></li>
+                    <li><a href="#especies">Especies</a></li>
+                    <li><a href="#curiosidades">Curiosidades</a></li>
+                    <li><a href="#ayuda" class="nav-cta">¡Ayúdalas!</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger" id="hamburger-menu" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
     </header>
 
     <main>
-        <section class="introduccion">
-            <h2>Nuestras Pequeñas Grandes Heroínas</h2>
-            <p>Las abejas son insectos voladores conocidos por su importante papel en la polinización y por producir la deliciosa miel. ¡Pero hay mucho más que descubrir sobre ellas!</p>
-            <img src="https://via.placeholder.com/600x400" alt="Abeja en una flor">
+        <!-- Hero Section -->
+        <section id="hero">
+            <div class="hero-content">
+                <h1>El Vuelo que Sustenta al Mundo</h1>
+                <p>Descubre el vital universo de las abejas y su impacto en nuestro planeta.</p>
+                <a href="#importancia" class="btn-primary">Saber más</a>
+            </div>
         </section>
 
-        <section class="datos-curiosos">
-            <h2>Datos Curiosos que te Sorprenderán</h2>
-            <ul>
-                <li><strong>Comunicación con baile:</strong> Las abejas se comunican entre sí realizando una especie de danza para indicar la ubicación de las flores.</li>
-                <li><strong>Cinco ojos:</strong> Tienen dos ojos grandes a los lados de la cabeza y tres ojos más pequeños en la parte superior.</li>
-                <li><strong>Trabajo en equipo:</strong> Para producir un kilo de miel, ¡un enjambre de abejas necesita visitar alrededor de 4 millones de flores!</li>
-                <li><strong>La abeja reina:</strong> Es la única que pone huevos en la colmena y puede llegar a poner hasta 2,000 en un solo día.</li>
-                <li><strong>Constructoras eficientes:</strong> Construyen sus panales con celdas hexagonales, la forma más eficiente para almacenar miel usando la menor cantidad de cera.</li>
-            </ul>
+        <!-- Importancia Section -->
+        <section id="importancia" class="content-section">
+            <div class="container">
+                <h2>Nuestras Pequeñas Grandes Heroínas</h2>
+                <div class="grid-layout">
+                    <figure>
+                        <img src="https://images.unsplash.com/photo-1525652523-6a58307b9f5f?q=80&w=1974" alt="Abeja polinizando una flor de lavanda." onerror="this.onerror=null;this.src='https://placehold.co/600x400/DBA800/FFFFFF?text=Abeja+en+Flor';">
+                        <figcaption>La polinización es esencial para la producción de alimentos.</figcaption>
+                    </figure>
+                    <div class="text-content">
+                        <p>Más del <strong>75% de los cultivos alimentarios</strong> del mundo dependen de la polinización por insectos, y las abejas son las campeonas de este proceso. Sin ellas, frutas, verduras y frutos secos como las almendras serían un lujo escaso. Son un pilar fundamental para la biodiversidad y la seguridad alimentaria global.</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section class="importancia">
-            <h2>¿Por Qué Son Tan Importantes?</h2>
-            <p>Más del 75% de los cultivos alimentarios del mundo dependen en cierta medida de la polinización. Sin las abejas, tendríamos muchos menos alimentos como frutas, verduras y frutos secos. Son vitales para mantener el equilibrio de los ecosistemas.</p>
-            <img src="https://via.placeholder.com/600x400" alt="Panal de abejas con miel">
+        <!-- Especies Section -->
+        <section id="especies" class="content-section bg-light">
+            <div class="container">
+                <h2>Un Mundo de Diversidad</h2>
+                <p class="section-subtitle">Existen más de 20,000 especies. Conoce algunas de las más fascinantes.</p>
+                <div class="cards-container">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1598433987114-15b565b95535?q=80&w=2070" alt="Abeja de la miel en un panal." class="card-img" onerror="this.onerror=null;this.src='https://placehold.co/600x400/DBA800/FFFFFF?text=Abeja+Melífera';">
+                        <h3>Abeja Melífera</h3>
+                        <p>La más conocida. Viven en colonias sociales complejas, producen miel y cera, y son polinizadoras incansables.</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1568551381639-6d65518b4dc5?q=80&w=2074" alt="Abejorro grande y peludo sobre una flor." class="card-img" onerror="this.onerror=null;this.src='https://placehold.co/600x400/DBA800/FFFFFF?text=Abejorro';">
+                        <h3>Abejorro</h3>
+                        <p>Grandes, peludos y robustos. Son vitales para polinizar en climas fríos y para plantas como el tomate, gracias a su "polinización por zumbido".</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1620584749323-55925e073534?q=80&w=2070" alt="Abeja solitaria en una hoja." class="card-img" onerror="this.onerror=null;this.src='https://placehold.co/600x400/DBA800/FFFFFF?text=Abeja+Solitaria';">
+                        <h3>Abeja Solitaria</h3>
+                        <p>La gran mayoría de las especies de abejas son solitarias. No forman colonias y cada hembra construye su propio nido. Son polinizadoras muy eficientes.</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section class="tipos-de-abejas">
-            <h2>No Todas las Abejas Son Iguales</h2>
-            <p>Existen más de 20,000 especies de abejas en el mundo. Las más conocidas son:</p>
-            <ul>
-                <li><strong>Abeja melífera:</strong> La más común, vive en grandes colonias y produce miel.</li>
-                <li><strong>Abejorro:</strong> Más grande y peludo, es un excelente polinizador para climas más fríos.</li>
-                <li><strong>Abeja solitaria:</strong> Como su nombre indica, no vive en colonias y representa a la mayoría de las especies de abejas.</li>
-            </ul>
+        <!-- Curiosidades Section -->
+        <section id="curiosidades" class="content-section">
+            <div class="container">
+                <h2>¿Sabías Que...?</h2>
+                <ul>
+                    <li><span class="icon" role="img" aria-label="bailarín">🕺</span> Las abejas se comunican la ubicación de las flores a través de un complejo baile conocido como la "danza de la abeja".</li>
+                    <li><span class="icon" role="img" aria-label="ojos">👁️</span> Tienen cinco ojos: dos grandes ojos compuestos y tres ocelos (ojos simples) en la parte superior de la cabeza.</li>
+                    <li><span class="icon" role="img" aria-label="globo terráqueo">🌍</span> Para producir un solo kilogramo de miel, un enjambre debe visitar cerca de 4 millones de flores, ¡un viaje equivalente a dar cuatro vueltas a la Tierra!</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section id="ayuda" class="cta-section">
+            <div class="container">
+                <h2>Tú Puedes Hacer la Diferencia</h2>
+                <p>Planta flores nativas en tu jardín o balcón, evita el uso de pesticidas y apoya a los apicultores locales. ¡Cada pequeña acción cuenta!</p>
+                <a href="https://www.greenpeace.org/mexico/blog/9546/10-maneras-de-ayudar-a-las-abejas-y-salvar-el-planeta/" class="btn-secondary" target="_blank">Aprende cómo ayudar</a>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <p>Cuidemos a las abejas, ¡nuestro futuro depende de ellas! 🌼</p>
+    <footer class="main-footer">
+        <p>&copy; 2025 Planeta Abeja. Creado con 💛 por la naturaleza.</p>
     </footer>
+
+    <a href="#" class="back-to-top" id="back-to-top-btn" title="Volver arriba">↑</a>
 
 </body>
 </html>
